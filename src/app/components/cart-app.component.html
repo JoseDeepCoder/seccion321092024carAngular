@@ -1,1 +1,12 @@
-<h2>HOLA MUNDO soy CART APP</h2>
+<h2>Carro Compras!</h2>
+
+<div>
+  @for (product of products; track $index) {
+  <div>
+    <h5>{{ product.name }}</h5>
+    <h5>{{ product.description }}</h5>
+    <h5>{{ product.price }}</h5>
+    <button class="btn btn-danger">Agregar al Carro</button>
+  </div>
+  }
+</div>
