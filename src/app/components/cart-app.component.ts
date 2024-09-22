@@ -36,7 +36,9 @@ export class CartAppComponent implements OnInit{
     } else {
       this.items = [... this.items, { product, quantity: 1}]
     }
-    
   }
 
+  onDeleteCart(id: number) : void { 
+    this.items = this.items.filter(item => item.product.id !== id);
+  }
 }

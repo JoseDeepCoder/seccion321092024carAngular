@@ -6,7 +6,7 @@
 ></catalog>
 
 @if (items.length > 0) {
-<cart [items]="items"></cart>
+<cart [items]="items" (idProductEventEmitter)="onDeleteCart($event)"></cart>
 }@else {
 <div class="alert alert-warning">No hay elementos</div>
 }
