@@ -13,6 +13,8 @@ export class CartComponent {
 
   @Output() idProductEventEmitter = new EventEmitter();
 
+  @Input() total: number = 0;
+
   onDeleteCart(id: number) { 
     this.idProductEventEmitter.emit(id);
   }
